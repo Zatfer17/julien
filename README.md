@@ -4,7 +4,9 @@
 
 # `julien`
 
-Download [Boiler Room](https://www.youtube.com/@boilerroom) sets as `m4a`s straight to your local music folder.
+Download:
+- [Boiler Room](https://www.youtube.com/@boilerroom) sets as `m4a`s straight to your local music folder
+- [Lyberry sample packs](https://files.lyberry.com/audio/sounds/) to your local music folder
 
 ## Usage
 
@@ -24,16 +26,13 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Optionally edit the script config in `main.py`:
-```python
-MUSIC_PATH    = Path.home() / "Music" / "Boiler Room"
-URL           = "https://www.youtube.com/@boilerroom"
-TITLE_FILTER  = "| Boiler Room"
-LENGTH_FILTER = 2700
-VIEWS_FILTER  = 1000000
-```
+4. Edit the script config in `boiler.py` or `lyberry.py`
 
 5. Run the script:
 ```
-python main.py
+python src/boiler.py
+```
+or
+```
+python src/lyberry.py
 ```
